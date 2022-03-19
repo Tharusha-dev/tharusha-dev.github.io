@@ -18,11 +18,17 @@ body , html {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
     color: white;
+    scroll-behavior: smooth;
 }
 
 svg {
     height: 100%;
     width: auto;
+}
+
+
+a {
+    text-decoration: none;
 }
 
 
@@ -98,6 +104,11 @@ svg {
     cursor: pointer;
 }
 
+.signature {
+    width: 10.5vw;
+    height: auto;
+}
+
 .signature-path {
     stroke-dasharray: 677.8;
     stroke-dashoffset: 677.8;
@@ -106,7 +117,7 @@ svg {
 
 .landing-page {
     overflow: hidden;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 2% 4% 4% 4%;
 }
 
@@ -114,10 +125,13 @@ svg {
 
 .landing-page-middle {
     display: flex;
+    align-items: center;
+    margin-bottom: 10vh;
 }
 
 .landing-page-name-art {
     position: relative;
+    height: 36vw;
 }
 
 .landing-page-name-container-wrapper {
@@ -133,7 +147,7 @@ svg {
 }
 
 .landing-page-name-container {
-    height: 43vh;
+    height: 23vw;
     width: 40vw;
     border-radius: 1em;
 
@@ -207,7 +221,7 @@ svg {
 
 .landing-page-middle-right {
     display: flex;
-    height: 53vh;
+    height: 28vw;
     justify-content: space-between;
     flex-direction: column;
     margin-left : auto;
@@ -220,7 +234,7 @@ svg {
 }
 
 .frontend-backend-text-container {
-    height: 10vh;
+    height: 5vw;
     width: 37vw;
     border-radius: 0.5em;
     text-align: center;
@@ -251,8 +265,8 @@ svg {
 }
 
 .web-and-mobile-icon {
-    width: max-content;
-    height: max-content;
+    width: 5.2vw;
+    height: auto;
 }
 
 .web-and-mobile-and {
@@ -742,7 +756,134 @@ svg {
         font-size: 8.5px;
     }
 
+    .landing-page {
+        height: 100vh;
+    }
 
+    .landing-page-name-container-wrapper {
+        top: 58%;
+    }
+
+    .landing-page-name-art-triangle {
+        height: 72vw;
+        width: auto;
+    }
+
+    .landing-page-name-container {
+
+        height: 37vw;
+        
+        width: 67vw;
+    
+    }
+
+    .landing-page-name {
+        font-size: 4.3em;
+    }
+
+    .landing-page-middle {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.5vh;
+    }
+
+    .landing-page-middle-right {
+        display: grid;
+        margin-left: 0;
+        margin-top: 25vh;
+        width: max-content;
+        grid-row-gap: 52%;
+    
+    }
+
+    .web-and-mobile {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 1.5em;
+    }
+
+    .nav-items {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        width: 77%;
+        border-radius: 2.2em;
+        margin-left: auto;
+    }
+
+    .nav-item p {
+        font-size: 1.3em;
+    }
+
+    .frontend-backend-text-container-wrapper {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .frontend-backend-text-container {
+        height: 10vw;
+        /* width: 64vw; */
+        width: 73vw;
+
+        border-radius: 1em;
+    }
+
+    .frontend-backend-text {
+        font-size: 2.5em;
+    }
+
+    .web-and-mobile-and {
+        display: none;
+    }
+
+    .web-and-mobile-icon {
+        width: 10.2vw;
+        height: auto;
+    }
+
+    .signature {
+        width: 28.5vw;
+    }
+
+    .www-web-icon {
+        margin-left: -28%;
+    }
+
+    .whoami-page-middle {
+        margin-top: auto;
+        margin-bottom: -32vh;
+    }
+
+    .whoami-heading-circle-wrapper {
+        transform: translateX(10%);
+    }
+
+    .whoami-heading-circle {
+        height: 25vmax;
+        width: 25vmax;
+    }
+
+    .whoami-heading-circle-back {
+        height: 25vmax;
+        width: 25vmax;
+    }
+
+    .toolbox-heading-container-top {
+        height: 18vw;
+    }
+
+    .toolbox-heading-container-back {
+        height: 18vw;
+    }
+
+    .toolbox-page-middle {
+        margin-top: 9vh;
+    }
 
 }
 
