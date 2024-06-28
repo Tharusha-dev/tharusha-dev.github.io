@@ -1,0 +1,68 @@
+body {
+    padding: 3vh 3vw 0 3vw;
+    background-color: #1B1B1B;
+    color: white;
+    position: absolute;
+}
+li {
+    margin-top: 1%;
+}
+
+.home-button {
+    position: fixed;
+    width: 1.4vw;
+    left: 0;
+    padding: 0.7%;
+    background-color: #313131;
+    border-radius: 0 0.3vw 0.3vw 0;
+
+}
+
+.casestudy-outer {
+    padding: 0.8vw;
+}
+
+.casestudy-inner {
+    background-color: #1B1B1B;
+    padding: 1.5vw;
+    border-radius: 0.5%;
+}
+
+.casestudy-outer-bankinfo {
+
+    background-color: #924DBF;
+}
+
+
+.casestudy-outer-wansearch {
+    background-color: #FC4C0A;
+
+
+}
+
+.project-actions {
+    margin-top: 4%;
+    display: flex;
+    width: 40%;
+}
+
+.project-actions a {
+    margin-right: 5%;
+    width: 8%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+.home-button {
+    left: auto;
+    top: 0;
+    width: 6vw;
+}
+
+.project-actions {
+    margin-top: 8%;
+    width: 95%;
+}
+}

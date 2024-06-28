@@ -1,0 +1,98 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #1B1B1B;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    overflow-x: hidden;
+    color: white;
+    margin: 10vh 5vw 0 5vw;
+   }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-text {
+    margin-top: 15vh;
+
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sub-text {
+   
+        width: 100%;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+}
+
+.gif {
+    height: max-content;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.page-actions-outer {
+    width: 100%;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-actions {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action {
+    text-align: center;
+    background-color: red;
+    padding: 4%;
+    border-radius: 0.6vw;
+}
+
+.home-button {
+    position: fixed;
+    width: 1.4vw;
+    left: 0;
+    padding: 0.7%;
+    background-color: #313131;
+    border-radius: 0 0.3vw 0.3vw 0;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .home-button {
+        left: auto;
+        top: 0;
+        width: 6vw;
+    }
+
+    .page-actions {
+        width: 100%;
+    }
+
+    .action {
+        padding: 2%;
+        width: 25%;
+    }
+
+}
