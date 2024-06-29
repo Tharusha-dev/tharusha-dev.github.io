@@ -9,13 +9,51 @@ body {
  width: 100vw;
  height: 100vh;
  overflow-x: hidden;
- scroll-behavior: smooth
+ scroll-behavior: smooth;
+ font-family: "Poppins";
 }
 
 /* des ou - 89  pro 120 */
 a {
     text-decoration: none;
     color: white;
+}
+
+button {
+    background-color: #303030;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+button:hover {
+    color: white;
+    transition: background-color 0.5s;
+
+
+}
+
+
+#wansearch-button:hover {
+    background-color: #FC4C0A;
+
+}
+
+#bankinfo-button:hover {
+    background-color: #924DBF;
+}
+
+#insight-button:hover {
+    background-color: #2177FF;
+}
+
+#bhrep-button:hover {
+    background-color: #00A07C;
+}
+
+#gpfs-button:hover {
+    background-color: #2177FF;
 }
 
 
@@ -316,7 +354,7 @@ border-radius: 1vw;
     color: white;
     padding: 5%;
     font-size: 170%;
-    font-weight: 50;
+    font-weight: 150;
    
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -398,6 +436,7 @@ box-sizing: border-box;
     font-size: large;
     color: white;
     /* width: max-content; */
+    font-weight: 200;
 
     border:0.04vw solid rgba(255, 255, 255, 0.308); 
     border-radius: 1vw;
@@ -503,10 +542,6 @@ padding: 2%;
 }
 
 .about-item-outer p {
-    width: 80%;
-}
-
-.about-item-outer a {
     width: 80%;
 }
 

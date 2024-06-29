@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>GoProfileFromSeed</title>
+</head>
+
+<body>
+    <a href="/">
+        <div class="home-button">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.5192 7.82274C2 8.77128 2 9.91549 2 12.2039V13.725C2 17.6258 2 19.5763 3.17157 20.7881C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.7881C22 19.5763 22 17.6258 22 13.725V12.2039C22 9.91549 22 8.77128 21.4808 7.82274C20.9616 6.87421 20.0131 6.28551 18.116 5.10812L16.116 3.86687C14.1106 2.62229 13.1079 2 12 2C10.8921 2 9.88939 2.62229 7.88403 3.86687L5.88403 5.10813C3.98695 6.28551 3.0384 6.87421 2.5192 7.82274ZM9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
+                    fill="#ffffff" />
+            </svg>
+        </div>
+    </a>
+    <div class="casestudy-outer casestudy-outer-gpfs ">
+
+
+        <div class="casestudy-inner">
+            <h1 id="goprofilefromseed-">GoProfileFromSeed 🕵️🏾‍♂️</h1>
+            <h2 id="a-go-library-to-generate-user-profiles-based-on-a-seed-">A Go library to generate user profiles
+                based on a seed.</h2>
+            <p>A <code>Profile</code> is a structure with the following fields</p>
+            <ul>
+                <li><strong>First Name</strong></li>
+                <li><strong>Last Name</strong></li>
+                <li><strong>Username</strong></li>
+                <li><strong>Email</strong></li>
+                <li><strong>Region</strong></li>
+                <li><strong>Address</strong></li>
+                <li><strong>Seed</strong></li>
+            </ul>
+            <p><strong>You can also generate a unique profile image for each profile.</strong></p>
+            <p>A <code>seed</code> is a 5 character string. Each character can a number or a lower case or upper case
+                English letter.</p>
+            <h2 id="how-it-works-">How it works 🛠️</h2>
+            <p>The following image shows how each field is determined :</p>
+            <p><img src="https://i.ibb.co/d2JZYnv/seed-1.png" alt="enter image description here"></p>
+            <p><strong>Region</strong>: numbers, upper case letters and lower case letters are divided into groups and
+                if the integer representation of the byte (n) of a character is within that group that region is
+                assigned. Same for gender.</p>
+            <p><strong>First names starting letter</strong> will be either,
+                the first non-numerical character after the second character of the seed or if no non-numerical
+                character is present after the second character of the seed, then the letter corresponding to the
+                integer representation of the byte of the 3rd number + 17.</p>
+            <p><strong>Last names starting letter</strong> will be either,
+                the second non-numerical character after the second character of the seed or if only one non-numerical
+                character is present after the second character of the seed, then the letter corresponding to the
+                integer representation of the byte of the 4th number + 17.</p>
+            <p><strong>Offset</strong> : The program will take the integer representation of the byte (n) of a character
+                and will assign the item at the n th line in the data file belonging to the respective field. In the
+                case of two letters, it will multiply those two numbers and get the n.</p>
+            <p><strong>Username and email</strong> is generated using templates determined in the common_templates
+                directory in the data.</p>
+            <div class="gpfs-images">
+                <h2 id="profile-image">Profile Image</h2>
+                <p>Each profile image is a 250 <em> 250 pixel image. This square is divided into 25, 50</em>50 squares
+                    and
+                    according to the image below, five or fewer squares are painted based on each character of the seed
+                    starting from the middle square.</p>
+                <img src="https://i.ibb.co/Y8F2DXF/profile-img.png" alt="enter image description here">
+
+                <br />
+               
+                <img src="https://i.ibb.co/D83r0rj/examples.png" alt="enter image description here">
+
+            </div>
+
+            <h2 id="data-files">Data files</h2>
+            <p>Currently, the data files include common names and addresses of these regions:</p>
+            <ul>
+                <li>Sri Lanka 🇱🇰</li>
+                <li>USA 🇺🇸</li>
+                <li>UK 🇬🇧</li>
+                <li>Australia 🇦🇺</li>
+            </ul>
+            <p>Information on how those data is gathered can be found in info.txt files inside each folder.</p>
+            <h2 id="documentation">Documentation</h2>
+            <p><a href="https://pkg.go.dev/github.com/Tharusha-dev/GoProfileFromSeed"
+                    target="_blank">https://pkg.go.dev/github.com/Tharusha-dev/GoProfileFromSeed</a></p>
+
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -3,6 +3,7 @@ body {
     background-color: #1B1B1B;
     color: white;
     position: absolute;
+    font-family: "Poppins";
 }
 li {
     margin-top: 1%;
@@ -40,6 +41,12 @@ li {
 
 }
 
+.casestudy-outer-gpfs {
+
+    background-color: #2177FF;
+  
+}
+
 .project-actions {
     margin-top: 4%;
     display: flex;
@@ -50,6 +57,7 @@ li {
     margin-right: 5%;
     width: 8%;
 }
+
 
 
 

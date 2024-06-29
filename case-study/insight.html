@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Insight</title>
+</head>
+
+<body>
+    <a href="/">
+        <div class="home-button">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.5192 7.82274C2 8.77128 2 9.91549 2 12.2039V13.725C2 17.6258 2 19.5763 3.17157 20.7881C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.7881C22 19.5763 22 17.6258 22 13.725V12.2039C22 9.91549 22 8.77128 21.4808 7.82274C20.9616 6.87421 20.0131 6.28551 18.116 5.10812L16.116 3.86687C14.1106 2.62229 13.1079 2 12 2C10.8921 2 9.88939 2.62229 7.88403 3.86687L5.88403 5.10813C3.98695 6.28551 3.0384 6.87421 2.5192 7.82274ZM9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
+                    fill="#ffffff" />
+            </svg>
+        </div>
+    </a>
+    <div class="casestudy-outer casestudy-outer-gpfs ">
+
+
+        <div class="casestudy-inner">
+            <h1 id="insight-">InSight 🔍</h1>
+            <p>A chrome extension to extract information about your LinkedIn network without a LinkedIn developer
+                account.
+                All you need is your active LinkedIn login within the browser.</p>
+            <p>Extract Key Network Details:</p>
+            <ul>
+                <li><strong>First Name</strong></li>
+                <li><strong>Last Name</strong></li>
+                <li><strong>Headline (Current Job Title)</strong></li>
+            </ul>
+            <h2 id="installation">Installation</h2>
+            <ol>
+                <li>Locate the latest version of the extension on the project releases page.</li>
+                <li>Extract the downloaded file.</li>
+                <li>Navigate to <code>chrome://extensions/</code> in your browser.</li>
+                <li>Locate the toggle for &quot;Developer mode&quot; in the top right corner and activate it.</li>
+                <li>Click &quot;Load unpacked&quot; and select the extracted folder.</li>
+            </ol>
+            <h2 id="disclaimer">Disclaimer</h2>
+            <p>Please note that InSight is not affiliated with LinkedIn. Using it might violate LinkedIn&#39;s Terms of
+                Service. Use it at your own risk. This extension is meant to be used as a personal network evaluation
+                tool. By using this tool, you agree to not hold the author or contributors responsible for any
+                consequences resulting from its usage.</p>
+            <h2 id="how-it-works-">How it works 🛠️</h2>
+            <p>LinkedIn prevents straightforward web scraping without session cookies and specific headers. This
+                extension modifies HTTP requests made by LinkedIn. It retrieves your connections in bulk while
+                preserving the essential headers and cookie data.</p>
+            <p>The extension incorporates safeguards against exceeding LinkedIn&#39;s rate limits. It retrieves
+                connections in batches of 100 (set as <code>requestChunksDivider</code> on background.js) and introduces
+                random delays (maximum delay in miliseconds is set as <code>maxDelay</code> in background.js) between
+                requests to ensure smooth operation.</p>
+            <p>For more information about how linkedin Voyager API works, check out <a
+                    href="https://github.com/tomquirk/linkedin-api">this</a> amazing project by tomquirk, which inspired
+                this project. (This project does not rely on linkedin-api by tomquirk)</p>
+            <h2 id="insight-prioritizes-user-privacy">InSight prioritizes user privacy</h2>
+            <p>Importantly, <strong>no data will be stored externally</strong>. The extension does not save any of the
+                gathered data on any external servers.</p>
+
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
