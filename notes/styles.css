@@ -135,4 +135,8 @@ a {
         width: 50%;
     }
 
+    .construction-outer h1 {
+        width: auto;
+    }
+
 }
