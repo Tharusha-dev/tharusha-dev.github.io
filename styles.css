@@ -395,14 +395,11 @@ box-sizing: border-box;
     margin-top: 8%;
 }
 
-.bh-rep-description-inner button{
-    margin-top: 5%;
-}
 
 .bh-rep-description-outer {
     display: grid;
     grid-template-columns: auto;
-    gap: 2%;
+    gap: 3vw; /*fix to overflow problem on bh-rep (Gap without precentages)*/
     padding-bottom: 9%;
     
 }
@@ -795,11 +792,7 @@ padding: 2%;
         width: 80%;
     }
 
-    .bh-rep-project {
-        /* height: 130vh;     */
-        padding-bottom: 20%;
-    }
-    
+ 
    
 
     .description-outer {
@@ -812,14 +805,13 @@ height: max-content;
     }
 
 
-    .bh-rep-description-inner {
-        height: max-content;
-
-    }
 
     .bh-project {
         grid-template-columns: auto;
     }
+
+    .bh-left {
+        margin-top: 1vh; /*fix to overflow problem on bh-rep*/    }
     
 }
 
