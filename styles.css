@@ -321,9 +321,23 @@ margin-bottom: 20vh;
 
 .bh-rep-top {
     grid-template-columns: 50% auto;
+    padding-bottom: 15%;
 
 }
 
+.bh-project {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.bh-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:0.04vw solid rgba(255, 255, 255, 0.308); 
+border-radius: 1vw;
+
+}
 
 
 
@@ -374,7 +388,7 @@ box-sizing: border-box;
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 10%;
+ 
     font-size: 100%;
     border-radius: 1vw;
 
@@ -389,6 +403,8 @@ box-sizing: border-box;
     display: grid;
     grid-template-columns: auto;
     gap: 2%;
+    padding-bottom: 9%;
+    
 }
 
 
@@ -481,8 +497,7 @@ padding: 2%;
 }
 
 #about {
-    width: 100vw;
-    height: 100vh;
+ 
     margin-top: 30vh;
     color :white;
    
@@ -754,7 +769,8 @@ padding: 2%;
     }
 
     .bh-rep-project {
-        height: 130vh;    
+        /* height: 130vh;     */
+        padding-bottom: 20%;
     }
     
    
@@ -768,8 +784,14 @@ height: max-content;
         font-size: 80%;
     }
 
-    .bh-rep-description-outer {
-        height: 89vh;
+
+    .bh-rep-description-inner {
+        height: max-content;
+
+    }
+
+    .bh-project {
+        grid-template-columns: auto;
     }
     
 }
