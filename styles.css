@@ -313,6 +313,10 @@ margin-bottom: 20vh;
     width: 8%;
 }
 
+.project-actions span {
+    margin-right: 5%;
+}
+
 .bankinfo-top {
     grid-template-columns: auto 63%;
 
