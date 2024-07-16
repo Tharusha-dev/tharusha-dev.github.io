@@ -40,6 +40,10 @@ button:hover {
 
 }
 
+#physics-button:hover {
+    background-color: #504F4F;
+}
+
 #bankinfo-button:hover {
     background-color: #924DBF;
 }
@@ -428,6 +432,10 @@ box-sizing: border-box;
 
 .bh-rep-inner {
     background-color: #00A07C;
+}
+
+.physics-inner {
+    background-color: #504F4F;
 }
 
 .web-preview-img {
