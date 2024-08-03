@@ -67,12 +67,16 @@ homeNavButton = document.getElementById('nav-home');
 	}
 </script>
 
+
 <div
 	class="landing-page"
 	on:scroll={() => {
+		
 		fadeIn();
 	}}
+	
 >
+
 	<div class="nav-bar-outer">
 		<div class="nav-bar">
 			<div class="nav-item active-nav-item" id="nav-home"><a href="#home">HOME</a></div>
@@ -95,31 +99,35 @@ homeNavButton = document.getElementById('nav-home');
 
 			<h1 class="home-name">Tharusha Jayasooriya</h1>
 			<h2 id="home-description">
-				A <span style="color: #9354BF;">Full-stack engineer</span> from Sri Lanka
+				A <span style="color: #9354BF;">Full-stack engineer & Writer</span> from Sri Lanka
 			</h2>
 		</div>
 	</section>
 
-	<section
+	
+		
+		<section
 		id="portfolio"
+		
+
 		use:viewport
 		on:enterViewport={() => portfolioNavButton.classList.add('active-nav-item')}
 		on:exitViewport={() => portfolioNavButton.classList.remove('active-nav-item')}
 	>
-		<div class="project">
+		<div class="project" >
 			<div class="project-top bankinfo-top">
 				<div class="web-preview-outer mobile-only">
 					<div class="web-preview-inner bank-info-inner">
 						<img class="web-preview-img" src={bankInfoPreview} alt="" />
 					</div>
 				</div>
-				<div class="description-outer in-left">
+				<div class="description-outer in-left" >
 					<span>
 						A <b>bank information platform</b>, that provided savings/FD and loan
 						<b>interest rates</b>
 						as well as <b>data and statistics</b> on banks in sri lanka
 					</span>
-					<div class="project-actions">
+					<div class="project-action-main">
 						<a href="https://bankinfo.lk">
 							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g id="style=fill">
@@ -267,7 +275,8 @@ homeNavButton = document.getElementById('nav-home');
 			</div>
 		</div>
 
-		<div class="project">
+		<div class="project"
+	>
 			<div class="project-top insight-top">
 				<div class="web-preview-outer in-left">
 					<div class="web-preview-inner physics-inner">
@@ -280,7 +289,7 @@ homeNavButton = document.getElementById('nav-home');
 						<b>graph their velocity against time.</b>
 						Add special <b>spawners</b> for some extra fun.
 					</span>
-					<div class="project-actions">
+					<div class="project-action-main">
 						<a href="https://github.com/Tharusha-dev/matterjs-physics-simulator" target="_blank">
 							<svg
 								viewBox="0 0 20 20"
@@ -488,7 +497,7 @@ homeNavButton = document.getElementById('nav-home');
 						<b>LinkedIn network without a LinkedIn developer account.</b>
 						All you need is your active LinkedIn login within the browser.
 					</span>
-					<div class="project-actions">
+					<div class="project-action-main">
 						<a href="https://github.com/tharusha-dev/insight">
 							<svg
 								viewBox="0 0 20 20"
@@ -609,7 +618,7 @@ homeNavButton = document.getElementById('nav-home');
 						Mobile application to <b>collect/manage customer orders</b> on the go and
 						<b>send payment verifications via WhatsApp.</b>
 					</span>
-					<div class="project-actions" style="margin-top: 3%;">
+					<div class="project-action-main" style="margin-top: 3%;">
 						<a href="/notes/client-product">
 							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g id="style=fill">
@@ -739,7 +748,7 @@ homeNavButton = document.getElementById('nav-home');
 						<b>Inverted indexing</b>
 						and <b>Cosine-similarity</b> to find videos.
 					</span>
-					<div class="project-actions">
+					<div class="project-action-main">
 						<span>Svelte version</span>
 
 						<a href="https://github.com/Tharusha-dev/WANsearch" target="_blank">
@@ -818,7 +827,7 @@ homeNavButton = document.getElementById('nav-home');
 							</svg>
 						</a>
 					</div>
-					<div class="project-actions">
+					<div class="project-action-main">
 						<span>React version</span>
 						<a href="https://github.com/Tharusha-dev/WANsearchFrontendReact" target="_blank">
 							<svg
@@ -933,7 +942,7 @@ homeNavButton = document.getElementById('nav-home');
 						seed. By using algorithms to fetch user data from a database it
 						<b>generates a unique, reversable user profile with a profile picture</b> from just a seed.
 					</span>
-					<div class="project-actions">
+					<div class="project-action-main">
 						<a href="https://github.com/tharusha-dev/goprofilefromseed">
 							<svg
 								viewBox="0 0 20 20"
@@ -1122,6 +1131,9 @@ homeNavButton = document.getElementById('nav-home');
 			</a>
 		</div>
 	</section>
+	
+
+
 
 	<section
 		id="about"

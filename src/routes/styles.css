@@ -66,29 +66,36 @@ button:hover {
 
 
 .nav-bar-outer {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
     position: fixed;
     z-index: 999;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 }
 
 
 .nav-bar {
-    position: relative;
+    
+
     display: flex;
-    margin-top: 4vw;
-    margin-left: 5vw;
+    flex-direction: column;
+
+    margin-left: 4vw;
     align-items: center;
     
-    width:40vw;
-    height: 3vh;
+    width:max-content;
+    height: 80vh;
     background-color: #252525;
     border-radius: 1vw;
-    padding: 1.5% 1% 1.5% 1%;
+    padding: 1.5% 0 1.5% 0;
     box-sizing: border-box;
-    font-size: 70%;
-    justify-content: space-between;
+    font-size: 115%;
+    justify-content: space-around;
+    
 }
 
 
@@ -115,7 +122,7 @@ button:hover {
 
 #home {
    
-    margin: 0 5vw 0 5vw;
+    margin: 0 0 0 15vw;
    
     display: flex;
     /* align-items: center; */
@@ -145,10 +152,12 @@ button:hover {
 }
 
 .nav-item {
-    padding: 1.5% ;
+    padding: 16% ;
     width: max-content;
    
     color: white;
+    transform: rotate(-90deg) translate(-50%, 0);
+    border-radius: 0.5em;
 }
 
 .landing-page-intro {
@@ -320,8 +329,18 @@ text-orientation: mixed;
 
 }
 
+
+
+.section-title {
+    position: fixed;
+    top: 10vh;
+    color: white;
+}
+
 #portfolio {
-    margin: 3vh 7.5vw 0 7.5vw;
+    margin: 3vh 5vw 0 15vw;
+
+
  
  
 }
@@ -338,18 +357,18 @@ margin-bottom: 20vh;
     margin-bottom: 2%;
 }
 
-.project-actions {
+.project-action-main {
     margin-top: 10%;
     display: flex;
     width: 100%;
 }
 
-.project-actions a {
+.project-action-main a {
     margin-right: 5%;
     width: 8%;
 }
 
-.project-actions span {
+.project-action-main span {
     margin-right: 5%;
 }
 
@@ -542,9 +561,9 @@ padding: 2%;
 }
 
 #about {
+
+       margin: 30vh 5vw 8vh 15vw;
  
-    margin-top: 30vh;
-    margin-bottom: 8vh;
 
     color :white;
    
@@ -766,10 +785,28 @@ padding: 2%;
 
 @media only screen and (max-width: 600px) {
 
+    .nav-bar-outer {
+        width: 100%;
+        height: auto;
+    }
+
 
     .nav-bar {
+        flex-direction: row;
         width: 80vw;
         margin: 4vw auto 0 auto;
+        font-size: 70%;
+        align-items: center;
+        height: 3vh;
+        padding: 1.5% 1% 1.5% 1%;
+        font-size: 70%;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        transform: none;
+      
+            padding: 1.5% ;
     }
     .landing-page-intro {
         justify-content: center;
@@ -791,6 +828,20 @@ padding: 2%;
 
     .home-name {
         font-size: 3.5em;
+    }
+
+    #home {
+        margin: 0 5vw 0 5vw;
+    }
+
+    #portfolio {
+        margin: 3vh 7.5vw 0 7.5vw;
+     
+     
+    }
+
+    #about {
+        margin-left: 5vh;
     }
 
     #home-description {
