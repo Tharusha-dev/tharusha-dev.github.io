@@ -51,6 +51,9 @@ button:hover {
 #bankinfo-button:hover {
     background-color: #924DBF;
 }
+#csa-button:hover {
+    background-color: #51B8D0;
+}
 
 #insight-button:hover {
     background-color: #2177FF;
@@ -482,6 +485,10 @@ box-sizing: border-box;
 .bank-info-inner {
     background-color: #924DBF;
 
+}
+
+.csa-inner {
+    background-color: #51B8D0;
 }
 
 .insight-inner {
