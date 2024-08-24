@@ -14,7 +14,8 @@ export async function handle({ event, resolve }) {
 
 
   if (event.url.pathname === '/cv') {
-    throw redirect(301, 'https://drive.google.com/file/d/1HVJ6sG00SCMZ8-VI4IEGfb4ekPsVenTg/view?usp=sharing');
+    throw redirect(301, 'https://drive.google.com/file/d/1YT0xs5MsBd3GOyOlKjxdA2IQGlVKcWes/view?usp=sharing');
+    
   }
 
 
