@@ -1,4 +1,3 @@
-
 /* :global(html) {
     position: fixed;
     overflow-y: scroll;
@@ -994,6 +993,47 @@ height: max-content;
     .bh-left {
         margin-top: 1vh; /*fix to overflow problem on bh-rep*/    }
     
+}
+
+.upwork-badge-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 5vh;
+    padding: 2vh 3vw;
+    border: 0.04vw solid rgba(255, 255, 255, 0.308);
+    border-radius: 1vw;
+    width: fit-content;
+    margin: auto;
+}
+
+.upwork-badge {
+    width: 80px;
+    height: 80px;
+    margin-right: 2vw;
+}
+
+.upwork-text {
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+    .upwork-badge-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 4vh 6vw;
+        width: auto;
+    }
+
+    .upwork-badge {
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+
+    .upwork-text {
+        font-size: 1em;
+    }
 }
 
 

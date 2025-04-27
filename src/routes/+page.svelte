@@ -12,7 +12,8 @@
 	import csaPreview from '$lib/images/csa-preview.png'
 	import viewport from '../utils/useViewportAction';
 	import { onMount } from 'svelte';
-
+	import ReviewMarquee from '$lib/components/ReviewMarquee.svelte';
+	import upworkBadge from '$lib/images/upwork-badge.png';
 	import './styles.css';
 
 	// @ts-ignore
@@ -122,6 +123,7 @@ homeNavButton = document.getElementById('nav-home');
 				A <span style="color: #9354BF;">Full-stack engineer & Writer</span> from Sri Lanka
 			</h2>
 		</div>
+		<ReviewMarquee />
 	</section>
 
 	
@@ -900,7 +902,7 @@ homeNavButton = document.getElementById('nav-home');
 							</svg>
 						</a>
 
-						<a href="https://wansearch.xyz" target="_blank">
+						<!-- <a href="https://wansearch.xyz" target="_blank">
 							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g id="style=fill">
 									<g id="web">
@@ -949,7 +951,7 @@ homeNavButton = document.getElementById('nav-home');
 									</g>
 								</g>
 							</svg>
-						</a>
+						</a> -->
 					</div>
 					<div class="project-action-main">
 						<span>React version</span>
@@ -1273,8 +1275,12 @@ homeNavButton = document.getElementById('nav-home');
 		on:exitViewport={() => aboutNavButton.classList.remove('active-nav-item')}
 	>
 		<!-- <span id="about-heading">About</span> -->
-
+		<div class="upwork-badge-section in-left">
+			<img src={upworkBadge} alt="Upwork Top Rated Badge" class="upwork-badge"/>
+			<span class="upwork-text">Proud to be recognized as a Top Rated freelancer on Upwork, consistently delivering high-quality solutions.</span>
+		</div>
 		<div class="about-inner">
+			
 			<div class="about-item-outer about-line" id="about-item-outer-first"></div>
 			<div class="about-item-outer about-item-outer-right">
 				<div class="about-dot about-dot-right large-screen-only"></div>
