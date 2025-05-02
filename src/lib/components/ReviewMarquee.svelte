@@ -54,11 +54,14 @@
             </div>
             <div class="source-info">
               <span class="country-flag">{country}</span>
-              <img 
+              <a href={platform === 'Upwork' ? 'https://www.upwork.com/freelancers/~01cc4a157cb61f5d6b' : 'https://www.fiverr.com/s/VYLbP0Z'} target="_blank">
+                <img 
                 src={platform === 'Upwork' ? upworkLogo : fiverrLogo} 
                 alt="{platform} logo" 
                 class="platform-logo"
               />
+              </a>
+            
             </div>
           </div>
         </div>
