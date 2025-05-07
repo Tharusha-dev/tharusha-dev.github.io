@@ -1,9 +1,10 @@
 // @ts-nocheck
 import { XMLParser } from 'fast-xml-parser';
 
-export async function load() {
+export async function load({ fetch }) {
   try {
-    const response = await fetch('https://tharushaj.medium.com/feed');
+    // Use a proxy endpoint instead of directly fetching from Medium
+    const response = await fetch('/api/medium-feed');
     
     if (!response.ok) {
       throw new Error(`Failed to fetch feed: ${response.status} ${response.statusText}`);
@@ -44,6 +45,10 @@ export async function load() {
           // Fallback if guid is not available in expected format
           postId = new Date().getTime().toString();
         }
+
+        
+        // Check if this is a pinned post
+        const isPinned = ['how-search-engines-work-the-absolute-basics-of-indexing-and-retrieval-7ff3f084cb4c?source=rss-b89f1b6ae87c------2', 'create-an-apple-like-ecosystem-with-linux-and-android-8b69e6941dc9?source=rss-b89f1b6ae87c------2'].includes(postId);
         
         // Create a simple description by stripping HTML tags and limiting length
         let description = 'No description available';
@@ -76,7 +81,8 @@ export async function load() {
           pubDate: item.pubDate || '',
           description: description,
           author: item["dc:creator"] || 'Unknown Author',
-          categories: categories
+          categories: categories,
+          isPinned: isPinned
         };
       } catch (itemError) {
         console.error('Error processing item:', itemError);
@@ -88,9 +94,18 @@ export async function load() {
           pubDate: '',
           description: 'There was an error processing this item.',
           author: '',
-          categories: []
+          categories: [],
+          isPinned: false
         };
       }
+    });
+    
+    // Sort posts to put pinned posts at the top
+    posts.sort((a, b) => {
+      if (a.isPinned && !b.isPinned) return -1;
+      if (!a.isPinned && b.isPinned) return 1;
+      // For posts with the same pinned status, sort by date (newest first)
+      return new Date(b.pubDate) - new Date(a.pubDate);
     });
     
     return { posts };

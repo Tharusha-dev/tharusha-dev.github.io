@@ -1,9 +1,10 @@
 // @ts-nocheck
 import { XMLParser } from 'fast-xml-parser';
 
-export async function load({ params }) {
+export async function load({ params, fetch }) {
 	try {
-		const response = await fetch('https://tharushaj.medium.com/feed');
+		// Use the proxy endpoint instead of directly fetching from Medium
+		const response = await fetch('/api/medium-feed');
 		
 		if (!response.ok) {
 			throw new Error(`Failed to fetch feed: ${response.status} ${response.statusText}`);

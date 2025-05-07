@@ -32,6 +32,7 @@
       }
     }
   }
+
 </script>
 
 <svelte:head>
@@ -67,6 +68,15 @@
             day: 'numeric'
           })}</span>
           <div class="post-categories">
+            {#if post.isPinned}
+              <span class="post-category pinned">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L12 12"></path>
+                  <circle cx="12" cy="17" r="1"></circle>
+                </svg>
+                Pinned
+              </span>
+            {/if}
             {#each post.categories.slice(0, 3) as category}
               <span class="post-category">{category}</span>
             {/each}
@@ -189,7 +199,7 @@ body {
   }
   
   .post-title a:hover {
-    color: #2177FF;
+    color: #9354BF;
   }
   
   .post-description {
@@ -224,7 +234,7 @@ body {
   }
   
   .read-more:hover {
-    background-color: #2177FF;
+    background-color: #9354BF;
   }
   
   .medium-link:hover {
@@ -268,5 +278,13 @@ body {
       width: 100%;
       text-align: center;
     }
+  }
+  
+  .post-category.pinned {
+    background-color: #9354BF;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 500;
   }
 </style>

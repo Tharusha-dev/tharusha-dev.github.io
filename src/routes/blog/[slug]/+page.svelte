@@ -186,7 +186,7 @@ body {
 	}
 	
 	.content :global(blockquote) {
-		border-left: 4px solid #2177FF;
+		border-left: 4px solid #9354BF;
 		padding-left: 1rem;
 		margin-left: 0;
 		color: #959595;
@@ -211,7 +211,7 @@ body {
 	}
 	
 	.original-link:hover, .back-link:hover {
-		background-color: #2177FF;
+		background-color: #9354BF;
 	}
 	
 	@media (max-width: 600px) {
