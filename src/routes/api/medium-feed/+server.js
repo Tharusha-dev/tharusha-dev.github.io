@@ -3,7 +3,7 @@ export async function GET() {
     const response = await fetch('https://tharushaj.medium.com/feed');
     
     if (!response.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to fetch Medium feed' }), {
+      return new Response(JSON.stringify({ error: 'Failed to fetch Medium feed', errorMessage: response.statusText }), {
         status: response.status,
         headers: {
           'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ export async function GET() {
     });
   } catch (error) {
     console.error('Error fetching Medium feed:', error);
-    return new Response(JSON.stringify({ error: error.message }), {
+    return new Response(JSON.stringify({ error: error.message, errorMessage: error.message }), {
       status: 500,
       headers: {
         'Content-Type': 'application/json'
