@@ -74,11 +74,9 @@
   .reviews-section {
     width: 100%;
     overflow: hidden;
-    background-color: #1B1B1B;
     padding: 2rem 0;
-    margin: 5vh 0;
-    /* border: 0.04vw solid rgba(255, 255, 255, 0.308); */
-    border-radius: 1vw;
+    margin: 3vh 0;
+    border-radius: 0.5rem;
   }
   
   .marquee-container {
@@ -88,7 +86,8 @@
   
   .marquee {
     display: flex;
-    animation: marquee 30s linear infinite;
+    animation: marquee 150s linear infinite;
+    width: max-content;
   }
   
   .paused .marquee {
@@ -99,15 +98,16 @@
     min-width: 300px;
     max-width: 400px;
     margin: 0 1.5rem;
-    padding: clamp(1rem, 2vw, 1.5rem);
+    padding: 1.25rem;
     background-color: #252525;
-    border-radius: 0.8vw;
-    border: 0.04vw solid rgba(255, 255, 255, 0.308);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     color: white;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .review-text {
@@ -129,13 +129,13 @@
     display: flex;
     align-items: center;
     gap: 0.35rem;
-    height: clamp(16px, 2.5vw, 20px);
+    height: 20px;
     line-height: 1;
   }
   
   .stars {
     color: #9354BF;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: 1.1rem;
     line-height: 1;
     display: flex;
     align-items: center;
@@ -148,18 +148,18 @@
   .source-info {
     display: flex;
     align-items: center;
-    gap: clamp(0.5rem, 1vw, 0.75rem);
+    gap: 0.75rem;
   }
   
   .country-flag {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: 1.1rem;
     line-height: 1;
     display: flex;
     align-items: center;
   }
   
   .platform-logo {
-    height: clamp(16px, 2.5vw, 20px);
+    height: 20px;
     width: auto;
     object-fit: contain;
   }
@@ -169,14 +169,22 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(calc(-50%));
     }
   }
   
   @media only screen and (max-width: 768px) {
+    .reviews-section {
+      padding: 1.5rem 0;
+      margin: 2vh 0;
+      background-color: transparent;
+    }
+    
     .review-card {
-      min-width: 250px;
-      margin: 0 1rem;
+      min-width: 220px;
+      max-width: 75vw;
+      margin: 0 0.75rem;
+      padding: 1rem;
     }
     
     .review-text {
@@ -184,36 +192,77 @@
       margin-bottom: 0.75rem;
     }
     
-    .review-meta {
-      gap: 0.75rem;
-    }
-    
-    .source-info {
-      gap: 0.4rem;
-    }
-    
-    .rating {
-      gap: 0.25rem;
+    .marquee {
+      animation: marquee 85s linear infinite;
     }
   }
   
   @media only screen and (max-width: 480px) {
+    .reviews-section {
+      padding: 1rem 0;
+    }
+    
     .review-card {
-      min-width: 200px;
-      margin: 0 0.75rem;
+      min-width: 180px;
+      max-width: 70vw;
+      margin: 0 0.5rem;
+      padding: 0.875rem;
+      border-radius: 0.375rem;
     }
     
     .review-text {
       font-size: 0.85rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.625rem;
+      line-height: 1.4;
     }
     
     .review-meta {
+      flex-direction: column;
+      align-items: flex-start;
       gap: 0.5rem;
     }
     
     .source-info {
-      gap: 0.3rem;
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    .rating {
+      height: 18px;
+    }
+    
+    .stars, .country-flag {
+      font-size: 1rem;
+    }
+    
+    .platform-logo {
+      height: 18px;
+    }
+    
+    .marquee {
+      animation: marquee 85s linear infinite;
+      width: max-content;
+    }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .review-card {
+      min-width: 170px;
+      max-width: 75vw;
+      padding: 0.75rem;
+    }
+    
+    .review-text {
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .stars, .country-flag {
+      font-size: 0.9rem;
+    }
+    
+    .platform-logo {
+      height: 16px;
     }
   }
 </style> 

@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-cloudflare": "^4.7.0"
+		"@sveltejs/adapter-cloudflare": "^4.7.0",
+		"fast-xml-parser": "^5.2.2"
 	}
 }

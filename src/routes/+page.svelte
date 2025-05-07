@@ -122,6 +122,8 @@ homeNavButton = document.getElementById('nav-home');
 			<div class="nav-item active-nav-item" id="nav-home"><a href="#home">HOME</a></div>
 			<div class="nav-item" id="nav-portfolio"><a href="#portfolio">PORTFOLIO</a></div>
 			<div class="nav-item" id="nav-about"><a href="#about">ABOUT</a></div>
+			<div class="nav-item" id="nav-about"><a href="/blog">BLOG</a></div>
+
 		</div>
 	</div>
 
@@ -1609,7 +1611,7 @@ homeNavButton = document.getElementById('nav-home');
 					</a>
 				</div>
 			</div>
-			<div class="about-item-outer about-item-outer-left about-line">
+			<!-- <div class="about-item-outer about-item-outer-left about-line">
 				<div class=" about-dot about-dot-left large-screen-only"></div>
 
 				<div class="about-item-text-left">
@@ -1620,7 +1622,7 @@ homeNavButton = document.getElementById('nav-home');
 					<span> CV </span>
 				</div>
 				<a href="https://tharusha.dev/cv" target="_blank" class="in-left" style="color: #959595; font-size:150%; margin-top: 3%"> Download my CV </a>
-			</div>
+			</div> -->
 		</div>
 	</section>
 </div>
