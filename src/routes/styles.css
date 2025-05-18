@@ -1209,4 +1209,34 @@ height: max-content;
     }
 }
 
+.view-all-reviews {
+  margin-top: 2%;
+  text-align: right;
+}
+
+.view-all-reviews a {
+  color: #9354BF;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 10%;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.view-all-reviews a:hover {
+  color: #b47ad9;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .view-all-reviews {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .view-all-reviews a {
+    font-size: 1rem;
+  }
+}
+
 

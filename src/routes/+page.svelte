@@ -145,6 +145,7 @@ homeNavButton = document.getElementById('nav-home');
 			</h2>
 		</div>
 		<ReviewMarquee />
+		
 	</section>
 
 	

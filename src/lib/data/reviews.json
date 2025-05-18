@@ -1,8 +1,8 @@
 [
     {
-      "review": "Great job as usual",
+      "review": "Highly recommended, Tharusha did an impeccable job, well inside timelines I requested and to a standard much higher than I expected, including guidance on making things more efficient and effective at every step.",
       "rating": 5.0,
-      "country": "🇺🇸",
+      "country": "🇦🇺",
       "platform": "Upwork"
     },
     {
@@ -12,10 +12,10 @@
       "platform": "Upwork"
     },
     {
-      "review": "Highly recommended very good",
+      "review": "Highly recommended, Tharusha did an impeccable job, well inside timelines I requested and to a standard much higher than I expected, including guidance on making things more efficient and effective at every step.",
       "rating": 5.0,
-      "country": "🇰🇼",
-      "platform": "Fiverr"
+      "country": "🇦🇺",
+      "platform": "Upwork"
     },
     {
       "review": "Tharusha is excellent. I would highly recommend.",
@@ -23,6 +23,26 @@
       "country": "🇬🇧",
       "platform": "Upwork"
     },
+    {
+      "review": "Tharusha J was an absolute pleasure to work with! Their CODE EXPERTISE and professionalism truly exceeded my expectations, and they impressed with their timely delivery and politeness. Tharusha went above and beyond throughout the project, and I couldn't be happier with the outcome. 👏",
+      "rating": 5.0,
+      "country": "🇵🇰",
+      "platform": "Upwork"
+    },
+    {
+      "review": "Great job as usual",
+      "rating": 5.0,
+      "country": "🇺🇸",
+      "platform": "Upwork"
+    },
+
+    {
+      "review": "Highly recommended very good",
+      "rating": 5.0,
+      "country": "🇰🇼",
+      "platform": "Fiverr"
+    },
+
     {
       "review": "He built an extension for me with a connected database. He proposed the best solution with fair pricing. Overall, it was a great experience, and I would recommend him.",
       "rating": 5.0,
@@ -61,12 +81,6 @@
       "platform": "Upwork"
     },
     {
-      "review": "Highly recommended for any node js work, quick and to the point, many revisions done without any issues.",
-      "rating": 5.0,
-      "country": "🇵🇰",
-      "platform": "Upwork"
-    },
-    {
       "review": "Excellent developer.",
       "rating": 5.0,
       "country": "🇬🇧",
@@ -79,19 +93,26 @@
 
         "platform": "Fiverr"
       },
+    {
+      "review": "Highly recommended for any node js work, quick and to the point, many revisions done without any issues.",
+      "rating": 5.0,
+      "country": "🇵🇰",
+      "platform": "Upwork"
+    },
+    {
+      "review": "Loved working with Tharusha everything was exceptional!",
+      "rating": 5.0,
+      "country": "🇸🇦",
+      "platform": "Fiverr"
+    },
       {
         "review": "Very Keen coder, attention to detail and smart approach to deliver the work and code professionally, highly recommended",
         "rating": 5.0,
       "country": "🇵🇰",
 
         "platform": "Fiverr"
-      },
-  
-      {
-        "review": "Loved working with Tharusha everything was exceptional!",
-        "rating": 5.0,
-        "country": "🇸🇦",
-        "platform": "Fiverr"
       }
+  
+  
   ]
   

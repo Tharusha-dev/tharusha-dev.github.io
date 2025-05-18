@@ -68,17 +68,36 @@
       {/each}
     </div>
   </div>
+  <div class="view-all-reviews">
+    <a href="/reviews">View all reviews →</a>
+  </div>
 </div>
 
 <style>
   .reviews-section {
     width: 100%;
     overflow: hidden;
-    padding: 2rem 0;
     margin: 3vh 0;
     border-radius: 0.5rem;
   }
-  
+  .view-all-reviews {
+  margin-top: 2%;
+  text-align: right;
+}
+
+.view-all-reviews a {
+  color: #9354BF;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 10%;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.view-all-reviews a:hover {
+  color: #b47ad9;
+  text-decoration: underline;
+}
   .marquee-container {
     width: 100%;
     overflow: hidden;
