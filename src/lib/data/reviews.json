@@ -1,6 +1,19 @@
 [
-    {
+
+          {
       "review": "Highly recommended, Tharusha did an impeccable job, well inside timelines I requested and to a standard much higher than I expected, including guidance on making things more efficient and effective at every step.",
+      "rating": 5.0,
+      "country": "🇦🇺",
+      "platform": "Upwork"
+    },
+           {
+      "review": "Excellent work on the Chrome extension! Tharusha did an outstanding job building it exactly as requested. His communication throughout the project was top-notch - always responsive and kept me updated on progress. Would definitely work with him again!" ,
+      "rating": 5.0,
+      "country": "🇮🇩",
+      "platform": "Upwork"
+    },
+      {
+      "review": "Cannot recommend Tharusha highly enough, fast, high quality work",
       "rating": 5.0,
       "country": "🇦🇺",
       "platform": "Upwork"
@@ -111,7 +124,7 @@
       "country": "🇵🇰",
 
         "platform": "Fiverr"
-      }
+      } 
   
   
   ]
