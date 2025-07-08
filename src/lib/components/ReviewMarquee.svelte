@@ -69,7 +69,7 @@
     </div>
   </div>
   <div class="view-all-reviews">
-    <a href="/reviews">View all reviews →</a>
+    <a href="/reviews">View more reviews →</a>
   </div>
 </div>
 
