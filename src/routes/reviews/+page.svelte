@@ -59,10 +59,15 @@
 	<div class="reviews-container">
 		<h1>Client Reviews</h1>
 		<p class="reviews-intro">
-			Here's what clients have said about working with me. These reviews are from my profiles on 
-			<a href="https://www.upwork.com/freelancers/~01cc4a157cb61f5d6b" target="_blank" class="platform-link">Upwork</a> 
-			and <a href="https://www.fiverr.com/s/VYLbP0Z" target="_blank" class="platform-link">Fiverr</a>.
-		</p>
+  Here are a few reviews from people I've worked with — pulled from my profiles on 
+  <a href="https://www.upwork.com/freelancers/~01cc4a157cb61f5d6b" target="_blank" class="platform-link">Upwork</a> 
+  and 
+  <a href="https://www.fiverr.com/s/VYLbP0Z" target="_blank" class="platform-link">Fiverr</a>.
+	
+
+</p>
+
+
 
 		<div class="reviews-grid">
 			{#each reviews as { review, rating, country, platform }, i}
