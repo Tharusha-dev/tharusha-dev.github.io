@@ -172,7 +172,7 @@ homeNavButton = document.getElementById('nav-home');
 						as well as <b>data and statistics</b> on banks in sri lanka
 					</span>
 					<div class="project-action-main">
-						<a href="https://bankinfo.lk">
+						<a href="https://bankinfo.pages.dev/">
 							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g id="style=fill">
 									<g id="web">

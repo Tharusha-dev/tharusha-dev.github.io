@@ -89,7 +89,7 @@ So using this at command the script is set to run at 00:00.
 <div class="project-actions">
 
 
-    <a href="https://bankinfo.lk" target="_blank">
+    <a href="https://bankinfo.pages.dev/" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="style=fill">
                 <g id="web">
