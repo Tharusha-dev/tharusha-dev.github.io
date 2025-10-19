@@ -1,6 +1,6 @@
 export async function GET() {
   try {
-    const response = await fetch('https://tharushaj.medium.com/feed');
+    const response = await fetch('https://cczqtaosuuynquvguflo.supabase.co/storage/v1/object/public/blog/posts.xml');
     
     if (!response.ok) {
       return new Response(JSON.stringify({ error: 'Failed to fetch Medium feed', errorMessage: response.statusText }), {
