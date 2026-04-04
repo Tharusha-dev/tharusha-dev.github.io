@@ -40,19 +40,27 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Client Reviews | Tharusha Jayasooriya</title>
+	<meta name="description" content="Read reviews from clients I've worked with on Upwork and Fiverr." />
+</svelte:head>
+
 <div class="wrapper">
 	<div class="gradient gradient-1"></div>
 	<div class="gradient gradient-2"></div>
 	<div class="gradient gradient-3"></div>
 </div>
 
-<div class="reviews-page">
+	<div class="reviews-page">
 	<div class="nav-bar-outer">
 		<div class="nav-bar">
-			<div class="nav-item"><a href="/#home">HOME</a></div>
+			<div class="nav-item"><a href="/">HOME</a></div>
 			<div class="nav-item"><a href="/#portfolio">PORTFOLIO</a></div>
+			<div class="nav-item"><a href="/achievements">ACHIEVEMENTS</a></div>
+			<div class="nav-item"><a href="/volunteering">VOLUNTEERING</a></div>
 			<div class="nav-item"><a href="/#about">ABOUT</a></div>
 			<div class="nav-item"><a href="/blog">BLOG</a></div>
+			<div class="nav-item active-nav-item"><a href="/reviews">REVIEWS</a></div>
 		</div>
 	</div>
 
@@ -100,7 +108,6 @@
 		width: 100vw;
 		min-height: 100vh;
 		color: white;
-		font-family: "Poppins";
 		position: relative;
 		z-index: 99999;
 	}
@@ -113,13 +120,14 @@
 
 	h1 {
 		font-size: 3.5em;
-		font-weight: 600;
-		margin-bottom: 1rem;
+		font-weight: 200;
+		margin-bottom: 0.5rem;
 	}
 
 	.reviews-intro {
 		font-size: 1.2em;
 		font-weight: 300;
+		color: #959595;
 		margin-bottom: 3rem;
 		max-width: 800px;
 	}
@@ -159,10 +167,11 @@
 	}
 
 	.review-text {
-		font-size: 1.1rem;
-		line-height: 1.6;
+		font-size: 1.05em;
+		line-height: 1.7;
 		margin-bottom: 1.5rem;
 		font-weight: 300;
+		color: #d1d1d1;
 	}
 
 	.review-meta {

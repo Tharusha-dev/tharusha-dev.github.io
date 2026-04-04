@@ -37,6 +37,7 @@
 
 <svelte:head>
   <title>Blog | Tharusha Jayasooriya</title>
+  <meta name="description" content="Thoughts, ideas, and tutorials on technology, programming, and more." />
 </svelte:head>
 
 <a href="/">
@@ -101,12 +102,6 @@
 </div>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-    font-family: "Poppins";
-}
-
   .blog-page {
     max-width: 1000px;
     margin: 0 auto;
@@ -128,16 +123,17 @@ body {
   }
   
   .blog-header h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: 3.5em;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
   }
   
   .blog-header p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     color: #959595;
     max-width: 600px;
     margin: 0 auto;
+    font-weight: 300;
   }
   
   .blog-posts {
@@ -187,9 +183,10 @@ body {
   }
   
   .post-title {
-    font-size: 1.8rem;
+    font-size: 1.5em;
     margin-bottom: 1rem;
     line-height: 1.3;
+    font-weight: 500;
   }
   
   .post-title a {
@@ -205,7 +202,9 @@ body {
   .post-description {
     color: #959595;
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 1em;
   }
   
   .post-footer {

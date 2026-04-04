@@ -1,0 +1,171 @@
+[
+  {
+    "slug": "techfest-2025",
+    "title": "TechFest 2025",
+    "organization": "IEEE Sri Lanka Section",
+    "image": null,
+    "content": [
+      {
+        "type": "heading",
+        "text": "Reflecting on an unforgettable December!"
+      },
+      {
+        "type": "paragraph",
+        "text": "Being part of the organizing team for Techfest Sri Lanka 2025 was an absolute highlight of my year. The energy and seeing everything come together flawlessly was nothing short of amazing. A huge thank you to everyone who made Techverse such a massive success, the teamwork, dedication, and sheer scale of what we pulled off were incredible. The lessons learned and the connections made during that event are things I'll carry with me for a long time."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now, it's time to channel that exact same energy into a brand new chapter for 2026."
+      }
+    ]
+  },
+  {
+    "slug": "insl",
+    "title": "Project Vice Chair (Public Visibility)",
+    "organization": "IEEE Innovation Nation Sri Lanka (INSL)",
+    "image": null,
+    "content": [
+      {
+        "type": "heading",
+        "text": "A Brand New Chapter for 2026"
+      },
+      {
+        "type": "paragraph",
+        "text": "I am incredibly proud and excited to step into the role of Project Vice Chair (Public Visibility) for IEEE Innovation Nation Sri Lanka (INSL)!"
+      },
+      {
+        "type": "paragraph",
+        "text": "IEEE INSL is a nationwide entrepreneurship pre-accelerator program designed to nurture early-stage startups, bridging the gap between innovative ideas and the commercial market. The program brings together tech enthusiasts, mentors, and industry leaders to continually refine Sri Lanka's next big entrepreneurial success stories."
+      },
+      {
+        "type": "paragraph",
+        "text": "In my role, I can't wait to work alongside a brilliant team, amplify the impact of INSL, and bring some incredible stories to the spotlight this year. Let's make 2026 even bigger!"
+      }
+    ]
+  },
+  {
+    "slug": "genzipher",
+    "title": "GenZipher Hackathon",
+    "organization": "CSSL GenZ Chapter of UCSC",
+    "image": null,
+    "content": [
+      {
+        "type": "heading",
+        "text": "Behind the Tech: GenZipher Hackathon"
+      },
+      {
+        "type": "paragraph",
+        "text": "I was part of the Web and tech support team of the GenZipher 1.0 organized by the CSSL GenZ Chapter of UCSC. We built the full technical infrastructure, powering everything from registrations to the final CTF round."
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's a quick look at what went on behind the scenes:"
+      },
+      {
+        "type": "subheading",
+        "text": "🔹 genzipher.lk"
+      },
+      {
+        "type": "paragraph",
+        "text": "Built with Next.js for performance and scalability. Used Google Apps Script to automate email confirmations."
+      },
+      {
+        "type": "subheading",
+        "text": "🔹 Dolos and OSS Contributions"
+      },
+      {
+        "type": "paragraph",
+        "text": "We performed plagiarism detection using Dolos across all submissions in the first round."
+      },
+      {
+        "type": "paragraph",
+        "text": "A custom script was used to bulk-download submissions. The most popular open-source downloader lacked filtering for specific challenges, so we modified the Go script ourselves and opened a PR, contributing improvements back to the open-source community."
+      },
+      {
+        "type": "subheading",
+        "text": "🔹 Custom CTFd Deployment"
+      },
+      {
+        "type": "paragraph",
+        "text": "The final round ran on a heavily customized CTFd instance:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Redesigned the UI to match the hackathon's theme and branding",
+          "Added completely new custom pages and flows",
+          "A custom plugin that automatically emails participants when they reach certain solve milestones",
+          "Tuned scoring and challenge behavior to better fit our competition format"
+        ]
+      },
+      {
+        "type": "subheading",
+        "text": "🔹 Challenge Infrastructure"
+      },
+      {
+        "type": "paragraph",
+        "text": "Used KCTF to host PWN and Web challenges with proper isolation and auto-reset capability. Since we were running everything on a single VPS, we deployed KIND (Kubernetes IN Docker) — which allowed us to run a lightweight Kubernetes cluster inside Docker containers. This gave us the benefits of Kubernetes orchestration without needing multiple physical nodes."
+      },
+      {
+        "type": "paragraph",
+        "text": "And Nginx as the reverse proxy."
+      },
+      {
+        "type": "subheading",
+        "text": "🔹 DevOps"
+      },
+      {
+        "type": "paragraph",
+        "text": "Containerized services, separate Docker deployments for CTFd and KCTF, and CI/CD pipelines to ensure smooth updates and reliability during the event."
+      },
+      {
+        "type": "tech",
+        "items": [
+          "Next.js",
+          "Google Apps Script",
+          "CTFd",
+          "KCTF",
+          "Kubernetes (KIND)",
+          "Docker",
+          "CI/CD"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Building the infrastructure was just as exciting as the competition itself — balancing scalability, security, and reliability while keeping everything on a single VPS was a fun engineering challenge."
+      },
+      {
+        "type": "paragraph",
+        "text": "Huge props to our Web Lead Naveen Harinda, and my fellow members Sashik Thivanka, Induwara Uthsara, and everyone from the GenZipher OC for the teamwork, late nights, and constant problem-solving that made the event a success. Proud of what the team pulled off"
+      }
+    ]
+  },
+  {
+    "slug": "hourai",
+    "title": "HourOfAi",
+    "organization": "ACM of UCSC",
+    "image": null,
+    "content": [
+      {
+        "type": "heading",
+        "text": "What an inspiring day at Hour of AI!"
+      },
+      {
+        "type": "paragraph",
+        "text": "Together, we turned curiosity into ideas, and ideas into innovation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your energy, creativity, and passion brought AI to life, and we can't wait to see what you'll create next!"
+      },
+      {
+        "type": "paragraph",
+        "text": "A huge thank-you to everyone who joined and made this workshop a space of inspiration and discovery."
+      },
+      {
+        "type": "paragraph",
+        "text": "You're not just a witness to the future; you're part of it with the UCSC ACM Student Chapter"
+      }
+    ]
+  }
+]

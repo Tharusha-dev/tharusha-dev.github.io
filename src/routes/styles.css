@@ -4,20 +4,12 @@
     scroll-behavior: smooth !important;
 } */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-    font-family: "Poppins";
-}
-
 .landing-page {
 
  width: 100vw;
  height: 100vh;
  overflow-x: hidden;
  scroll-behavior: smooth;
- font-family: "Poppins";
  margin: 0;
  padding: 0;
  position: relative;
@@ -205,29 +197,24 @@ animation-name: animation-gradient-3;
 
 
 .nav-bar {
-    
-
     display: flex;
     flex-direction: column;
-
     margin-left: 4vw;
     align-items: center;
-    
-    width:max-content;
-    height: 80vh;
+    width: max-content;
+    height: max-content;
     background-color: #252525;
     border-radius: 1vw;
-    padding: 1.5% 0 1.5% 0;
+    padding: 1em 0.4em;
     box-sizing: border-box;
     font-size: 115%;
-    justify-content: space-around;
-    
+    justify-content: center;
+    gap: 0;
 }
 
 
 .active-nav-item {
     background-color: #1B1B1B;
-
 }
 .vertical-line-top-home {
     
@@ -280,12 +267,17 @@ animation-name: animation-gradient-3;
 }
 
 .nav-item {
-    padding: 16% ;
+    padding: 1em 0.6em;
     width: max-content;
-   
     color: white;
-    transform: rotate(-90deg) translate(-50%, 0);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
     border-radius: 0.5em;
+    font-size: 0.85em;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .landing-page-intro {
@@ -964,20 +956,22 @@ padding: 2%;
 
     .nav-bar {
         flex-direction: row;
-        width: 80vw;
+        width: 90vw;
         margin: 4vw auto 0 auto;
-        font-size: 70%;
         align-items: center;
-        height: 3vh;
-        padding: 1.5% 1% 1.5% 1%;
+        height: auto;
+        padding: 0.6em 0.8em;
         font-size: 70%;
         justify-content: space-between;
+        gap: 0;
     }
 
     .nav-item {
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
         transform: none;
-      
-            padding: 1.5% ;
+        padding: 0.5em 0.6em;
+        font-size: 1em;
     }
     .landing-page-intro {
         justify-content: center;

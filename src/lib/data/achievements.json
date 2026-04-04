@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "codequest",
+    "title": "CodeQuest 2nd Runners Up",
+    "organization": "UCSC",
+    "image": null,
+    "content": [
+      {
+        "type": "heading",
+        "text": "CodeQuest Hackathon: 2nd Runners Up"
+      },
+      {
+        "type": "paragraph",
+        "text": "Thrilled to share that our team emerged as the 2nd Runners Up at CodeQuest! We built an innovative solution tackling real-world problems under intense time constraints."
+      },
+      {
+        "type": "paragraph",
+        "text": "The hackathon pushed us to our limits, requiring fast prototyping and effective teamwork. We implemented a scalable architecture and delivered a polished working prototype within the 24-hour timeframe."
+      }
+    ]
+  },
+  {
+    "slug": "reidxtreme",
+    "title": "ReidXtreme 3rd Place",
+    "organization": "University of Colombo",
+    "image": null,
+    "content": [
+      {
+        "type": "heading",
+        "text": "Securing 3rd Place at ReidXtreme"
+      },
+      {
+        "type": "paragraph",
+        "text": "Incredible experience participating in ReidXtreme, where our team proudly secured 3rd place! The competition featured challenging algorithmic problems and complex system design tasks."
+      },
+      {
+        "type": "paragraph",
+        "text": "Working alongside talented peers, we navigated through multiple rounds of intense problem-solving. This achievement stands as a testament to our dedication, algorithmic thinking, and collaborative spirit."
+      }
+    ]
+  },
+  {
+    "slug": "codefest",
+    "title": "SLIIT Codefest 4th Place",
+    "organization": "SLIIT",
+    "image": null,
+    "content": [
+      {
+        "type": "heading",
+        "text": "Top 4 Finish at SLIIT Codefest"
+      },
+      {
+        "type": "paragraph",
+        "text": "Proud to have placed 4th at SLIIT Codefest, one of the most competitive hackathons in the country. We developed a comprehensive software solution that addressed key industry challenges."
+      },
+      {
+        "type": "paragraph",
+        "text": "The journey from ideation to the final pitch was rigorous but immensely rewarding. We received valuable feedback from industry judges and gained incredible insights into building robust tech products."
+      }
+    ]
+  }
+]
