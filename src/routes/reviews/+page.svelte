@@ -4,6 +4,7 @@
 	import fiverrLogo from '$lib/images/fiverr-logo.png';
 	import { onMount } from 'svelte';
 	import '../styles.css';
+	import NavBar from '$lib/components/NavBar.svelte';
 
 	// Function to generate star rating display
 	function getStarRating(rating) {
@@ -52,17 +53,7 @@
 </div>
 
 	<div class="reviews-page">
-	<div class="nav-bar-outer">
-		<div class="nav-bar">
-			<div class="nav-item"><a href="/">HOME</a></div>
-			<div class="nav-item"><a href="/#portfolio">PORTFOLIO</a></div>
-			<div class="nav-item"><a href="/achievements">ACHIEVEMENTS</a></div>
-			<div class="nav-item"><a href="/volunteering">VOLUNTEERING</a></div>
-			<div class="nav-item"><a href="/#about">ABOUT</a></div>
-			<div class="nav-item"><a href="/blog">BLOG</a></div>
-			<div class="nav-item active-nav-item"><a href="/reviews">REVIEWS</a></div>
-		</div>
-	</div>
+	<NavBar activePage="nav-reviews" />
 
 	<div class="reviews-container">
 		<h1>Client Reviews</h1>

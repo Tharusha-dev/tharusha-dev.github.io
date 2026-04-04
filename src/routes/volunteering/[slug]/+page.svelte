@@ -1,5 +1,6 @@
 <script>
     import '../../styles.css';
+    import NavBar from '$lib/components/NavBar.svelte';
 
     /** @type {import('./$types').PageData} */
     export let data;
@@ -89,17 +90,7 @@
 </div>
 
 <div class="landing-page" on:mousemove={handleMousemove}>
-    <div class="nav-bar-outer">
-        <div class="nav-bar">
-            <div class="nav-item" id="nav-home"><a href="/">HOME</a></div>
-            <div class="nav-item" id="nav-portfolio"><a href="/#portfolio">PORTFOLIO</a></div>
-            <div class="nav-item" id="nav-achievements"><a href="/achievements">ACHIEVEMENTS</a></div>
-            <div class="nav-item active-nav-item" id="nav-volunteering"><a href="/volunteering">VOLUNTEERING</a></div>
-            <div class="nav-item" id="nav-about"><a href="/#about">ABOUT</a></div>
-            <div class="nav-item" id="nav-blog"><a href="/blog">BLOG</a></div>
-            <div class="nav-item" id="nav-reviews"><a href="/reviews">REVIEWS</a></div>
-        </div>
-    </div>
+    <NavBar activePage="nav-volunteering" />
 
     <section id="volunteering-detail">
         <a href="/volunteering" class="back-link">← Back to Volunteering</a>

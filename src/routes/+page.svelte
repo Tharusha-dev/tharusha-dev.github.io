@@ -17,6 +17,7 @@
 	import upworkLogo from '$lib/images/upwork-logo.png';
 	import fiverrLogo from '$lib/images/fiverr-logo.png';
 	import './styles.css';
+	import NavBar from '$lib/components/NavBar.svelte';
 
 	// @ts-ignore
 	let leftInDivs;
@@ -121,18 +122,7 @@ homeNavButton = document.getElementById('nav-home');
 	on:mousemove={handleMousemove}
 >
 
-	<div class="nav-bar-outer">
-		<div class="nav-bar">
-			<div class="nav-item active-nav-item" id="nav-home"><a href="#home">HOME</a></div>
-			<div class="nav-item" id="nav-portfolio"><a href="#portfolio">PORTFOLIO</a></div>
-			<div class="nav-item" id="nav-achievements"><a href="/achievements">ACHIEVEMENTS</a></div>
-			<div class="nav-item" id="nav-volunteering"><a href="/volunteering">VOLUNTEERING</a></div>
-			<div class="nav-item" id="nav-about"><a href="#about">ABOUT</a></div>
-			<div class="nav-item" id="nav-blog"><a href="/blog">BLOG</a></div>
-			<div class="nav-item" id="nav-reviews"><a href="/reviews">REVIEWS</a></div>
-
-		</div>
-	</div>
+	<NavBar activePage="nav-home" isHome={true} />
 
 	<section
 		id="home"
